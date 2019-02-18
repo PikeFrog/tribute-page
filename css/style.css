@@ -1,10 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  color: #27231B;
+  font-size: 16px;
+  font-family: 'Gentium Book Basic', sans-serif;
 }
 section h1 {
   margin: 0;
-  padding: 0;
+  padding: 1em 0em;
 }
 img {
   width: 100%;
@@ -13,16 +16,36 @@ img {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  background-color: #fff;
+}
+nav {
+  list-style: none;
+  padding: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.text {
+  color: #000;
+  padding: 0em 1em;
 }
 .item1 {
-  background-color: red;
+  padding: 1em;
+  /*-- Light Blue: #83AAE5 --*/
+  background-color: #83AAE5;
 }
 .item2 {
-  background-color: blue;
+  padding: 1em;
+  color: #000;
+  /*-- Burgundy: #41292D --*/
+  background-color: #41292D;
 }
 .item3 {
-  background-color: red;
+  padding: 1em;
+  color: #000;
+  /*-- Grey: #767D77 --*/
+  background-color: #767D77;
 }
 .wrap1 {
   display: grid;
@@ -42,8 +65,11 @@ img {
 .wrapper .pic {
   padding: 1em;
 }
+.wrapper .vid {
+  padding: 1em;
+}
 
-/*-- Media queries for grid--*/
+/*-- Grid Media queries--*/
 @media screen and (min-width: 556px) {
   .wrap1, .wrap3 {grid-template-columns: 1fr;}
   .wrap2 {grid-template-columns: 1fr;}
